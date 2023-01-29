@@ -1,0 +1,22 @@
+//object
+
+var student:any={
+    fname:"Sai",
+    lname:"mani",
+    score:"95"
+};
+console.log(student.fname)
+console.log(student.lname)
+console.log(student)
+
+//looping object
+
+for(var item in student){
+   // console.log(item);
+  console.log(student[item]);
+}
+  // console.log(student['fname']);
+
+  // console.log(student['lname']);
+  // console.log(student['score']);
+

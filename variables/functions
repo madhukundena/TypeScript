@@ -1,0 +1,37 @@
+function hello(name:string):string{
+  return "hello world "+name
+}
+
+console.log(hello("madhu")) 
+
+function add(a:number,b:number):number{
+  return a+b;
+}
+console.log("sum is "+add(10,20))
+
+//optional values ?
+function display(id:number,name:string,role?:string){
+      console.log("id "+id);
+      console.log("name "+name);
+      if(role !== undefined)
+      console.log("role "+role);
+}
+display(12,"madhu","admin")
+
+
+//default values
+function display1(id:number,name:string,role:string="normal"){
+      console.log("id "+id);
+      console.log("name "+name);
+      console.log("role "+role);
+}
+display1(12,"madhu")
+
+//passinf fun
+function cal(fun:any){
+  console.log(fun(10,20));
+}
+
+cal(add)
+
+
